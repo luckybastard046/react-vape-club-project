@@ -1,0 +1,36 @@
+.wrapper-main-log-in {
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+
+    .wrapper-header-log-in {
+        background: #444;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 0;
+        border-bottom: 1px dashed #fff;
+
+        .wrapper-title-log-in {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        i {
+            color: #fff;
+        }
+    }
+
+    .wrapper-content-log-in {
+    }
+
+    .wrapper-footer-log-in {
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+    }
+}

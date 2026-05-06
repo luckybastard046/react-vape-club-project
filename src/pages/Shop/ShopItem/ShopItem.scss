@@ -1,0 +1,31 @@
+.shop-item {
+  width: 240px;
+  overflow: auto;
+
+  .shop-item-details {
+    list-style-type: none;
+    border: 1px dashed #f54c2a;
+
+    .shop-item-name {
+      color: brown;
+      font-size: 15px;
+      padding: 5px 0;
+    }
+
+    .shop-item-image {
+      img {
+        height: 200px;
+        border: 1px solid brown;
+      }
+    }
+
+    .shop-item-content {
+      margin: 0 auto;
+      padding: 10px;
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.notepad-delete-modal-overlay {
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  .notepad-delete-modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 340px;
+    background: #ccc;
+    margin: 0 auto;
+    padding: 0 10px;
+    border: 2px dashed #cc0000;
+    transform: translateY(-50%);
+
+    .notepad-delete-modal-btn {
+      text-align: right;
+
+      .btn-notepad-delete-modal-close {
+        background: transparent;
+        color: brown;
+        text-align: right;
+        padding-top: 5px;
+        border: none;
+        transition: 0.2s all;
+
+        &:hover {
+          color: #333;
+          transition: 0.2s all;
+        }
+      }
+    }
+
+    .notepad-delete-modal-content {
+      padding: 10px 0 30px 0;
+
+      .notepad-delete-modal-text {
+        text-align: center;
+        padding: 5px 0;
+
+        .notepad-delete-modal-error-action {
+          color: #333;
+          font-weight: 800;
+        }
+
+        .notepad-delete-modal-error {
+          color: #cc0000;
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+
+      .notepad-delete-modal-published {
+        p {
+          font-size: 14px;
+          font-weight: 500;
+
+          span {
+            color: brown;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .notepad-delete-modal-actions {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+
+        .btn-notepad-delete-modal-delete {
+          background: #eee;
+          color: #333;
+          padding: 10px 15px;
+          margin-top: 10px;
+          border: 1px dashed brown;
+          border-radius: 3px;
+          font-size: 16px;
+          text-transform: uppercase;
+          transition: 0.3s all;
+
+          &:hover {
+            background: #cc0000;
+            color: #eee;
+            border: 1px dashed #fff;
+          }
+        }
+
+        .btn-notepad-delete-modal-cancel {
+          background: #eee;
+          color: #333;
+          padding: 10px 15px;
+          margin-top: 10px;
+          border: 1px dashed brown;
+          border-radius: 3px;
+          font-size: 16px;
+          text-transform: uppercase;
+          transition: 0.3s all;
+
+          &:hover {
+            background: #333;
+            color: #eee;
+            border: 1px dashed #fff;
+          }
+        }
+      }
+    }
+  }
+}

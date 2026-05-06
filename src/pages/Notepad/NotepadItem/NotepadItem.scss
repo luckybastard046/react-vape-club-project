@@ -1,0 +1,77 @@
+.notepad-item {
+    width: 100%;
+    padding: 10px;
+    border: 1px dashed #f54c2a;
+
+    .notepad-item-container {
+        background: transparent;
+        width: 100%;
+        list-style-type: none;
+        margin: 0 auto;
+        text-align: center;
+
+        .notepad-item-header {
+            display: flex;
+            justify-content: space-between;
+
+            .notepad-item-details {
+                border-bottom: 1px dashed #333;
+
+                .notepad-item-detail {
+                    display: flex;
+                    gap: 3px;
+                    font-size: 13px;
+                    padding: 1px 0;
+
+                    span {
+                        color: brown;
+                    }
+
+                    .notepad-item-detail-gender {
+                        display: flex;
+                        align-items: center;
+                        gap: 2px;
+                    }
+                }
+            }
+
+            .notepad-item-buttons {
+                display: flex;
+                align-items: flex-start;
+                gap: 5px;
+                
+                button {
+                    background: transparent;
+                    color: #333;
+                    border: none;
+
+                    &:hover {
+                        color: #f54c2a;
+                    }
+                }
+            }
+        }     
+
+        .notepad-item-content {
+            background: transparent;
+            text-align: left;
+            font-size: 1px;
+            margin-top: 10px;
+
+            p {
+                font-size: 13px;
+                font-weight: 700;
+            }
+
+            i {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .notepad-item-footer {
+        text-align: right;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}

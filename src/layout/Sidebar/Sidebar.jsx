@@ -1,0 +1,68 @@
+import React, { useRef, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+
+import sidebarLogo from '../../assets/logo/logo-wrapper.png';
+
+import './Sidebar.scss';
+
+const Sidebar = ({ isOpen, closeSidebar }) => {
+    return (
+      <>
+        <div className="sidebar-layout">
+          <div
+            className="sidebar"
+            style={{
+              width: isOpen ? '220px' : '0px',
+              opacity: isOpen ? '1' : '0',
+              transition: isOpen ? '.3s all' : '.3s all',
+            }}
+          >
+            <div className="top-sidebar">
+              <div className="logo">
+                <img
+                  src={sidebarLogo}
+                  alt=""
+                />
+              </div>
+              <div
+                className="sidebar-list"
+                style={{
+                  opacity: isOpen ? '1' : '0',
+                }}
+              >
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? 'active-link' : 'not-active-link'
+                  }
+                  onClick={closeSidebar}
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  to="/pub"
+                  className={({ isActive }) =>
+                    isActive ? 'active-link' : 'not-active-link'
+                  }
+                  onClick={closeSidebar}
+                >
+                  Pub
+                </NavLink>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    isActive ? 'active-link' : 'not-active-link'
+                  }
+                  onClick={closeSidebar}
+                >
+                  Contact
+                </NavLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+};
+
+export default Sidebar;

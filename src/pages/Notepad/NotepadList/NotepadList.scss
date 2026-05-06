@@ -1,0 +1,14 @@
+.notepad-list {
+    width: 100%;
+    height: 355px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    overflow-y: auto;
+
+    .notepad-list-item {
+        width: 100%;
+        display: flex;
+    }
+}

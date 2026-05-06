@@ -1,0 +1,36 @@
+.wrapper-main-auth {
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+
+    .wrapper-header-auth {
+        background: #444;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 0;
+        border-bottom: 1px dashed #fff;
+
+        .wrapper-title-auth {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        i {
+            color: #fff;
+        }
+    }
+
+    .wrapper-content-auth {
+    }
+
+    .wrapper-footer-auth {
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+    }
+}

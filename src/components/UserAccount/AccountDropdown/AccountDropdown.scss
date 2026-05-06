@@ -1,0 +1,103 @@
+.account-dropdown {
+
+    .account-dropdown-container {
+        position: absolute;
+        top: 0;
+        right: -16px;
+        background: #fffef1;
+        color: #333;
+        width: 260px;
+        border: 1px dashed #333;
+
+        .account-dropdown-content-close {
+            text-align: right;
+            padding: 5px;
+
+            .btn-dropdown-content-close {
+                background: transparent;
+                color: #e5e5e5;
+                outline: none;
+                border: none;
+                transition: .3s all;
+                cursor: pointer;
+
+                &:hover {
+                    color: #333;
+                }
+            }
+        }
+
+        .account-dropdown-content-header {
+            text-align: left;
+
+            .account-dropdown-content-current-user {
+
+                .account-dropdown-details {
+
+                    .account-dropdown-content-image {
+                        margin-left: 8px;
+                    }
+
+                    .account-dropdown-content-logo {
+                        background-image: url('../../../assets/logo/logo-menu-vape.png');
+                        background-repeat: no-repeat;
+                        background-position: 10px 0px;
+                        width: 100%;
+                        height: 68px;
+                        margin-left: 8px;
+                        padding-top: 6px;
+                        font-size: 22px;
+
+                        h3 {
+                            color: #444;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .account-dropdown-content-links {
+                        list-style-type: none;
+                        border-top: 1px dashed #333;
+
+                        .account-dropdown-content-link {
+                            background: #e5e5e5;
+                            color: #333;
+                            display: flex;
+                            padding: 10px 8px;
+                            text-decoration: none;
+                            border-bottom: 1px dashed #333;
+                            transition: .3s all;               
+
+                            &:hover {
+                                background: brown;
+                                color: #e5e5e5;
+                            }
+                        }
+
+                        .account-dropdown-content-link.active {
+                            background: #555;
+                            color: #fff;
+                            transition: .3s all;
+
+                            &:hover {
+                                background: #555;
+                                color: #fff;
+                            }
+                        }
+
+                        .account-dropdown-footer-user {
+                            margin-top: 10px;
+                            padding: 10px;
+
+                            p {
+                                color: brown;
+                                font-weight: 500;
+                                font-size: 15px;
+                                padding-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

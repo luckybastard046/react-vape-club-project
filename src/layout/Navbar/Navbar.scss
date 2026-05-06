@@ -1,0 +1,84 @@
+.navbar-header {
+    background: #fffef1;
+    width: 100%;
+    padding: 0 15px;
+    border-bottom: 1px dashed #333;
+
+    .navbar-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+
+        .navbar-logo {
+
+            .navbar-logo-link {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                
+                img {
+
+                }
+            }
+        }
+
+        .navbar-nav {
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+
+            .navbar-nav-list {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                padding: 0 0 0 30px;
+                border-top: 1px dashed #333;
+
+                li {
+                    border-left: 1px dashed #333;
+
+                    .navbar-link {
+                        background: transparent;
+                        color: #333;
+                        height: 49px;
+                        display: block;
+                        font-weight: 400;
+                        padding: 10px 20px 20px 20px;
+                        border-top: 5px solid transparent;
+                        transition: .3s all;
+
+                        &:hover {
+                            background: #ccc;
+                            border-top: 5px solid #de6724;
+                            transition: .3s all;
+                        }
+                    }
+
+                    .navbar-link.active {
+                        background: #ccc;
+                        color: #333;
+                        height: 49px;
+                        display: block;
+                        font-weight: 400;
+                        padding: 10px 20px 20px 20px;
+                        border-top: 5px solid #de6724;
+                        transition: .3s all;
+
+                        &:hover {
+                            transition: .3s all;
+                        }
+                    }
+                }
+            }
+
+            .navbar-nav-buttons {
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                border-top: 1px dashed #333;
+            }
+        }
+    }
+}

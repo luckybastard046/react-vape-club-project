@@ -1,0 +1,74 @@
+.account-details {
+    padding: 10px;
+    z-index: -9999;
+
+        div {
+            .account-details-user {
+
+                .account-details-logged-title {
+                    color: #333;
+                    padding-bottom: 5px;
+                    margin: 5px 0;
+                    border-bottom: 1px dashed #333;
+                }
+
+                .account-details-detail {
+                    display: flex;
+                    gap: 5px;
+                    padding: 1px 0;
+
+                    h6 {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                    span {
+                        color: brown;
+                        font-size: 14px;
+                    }
+                }
+
+                .detail-password {
+                    display: flex;
+                    
+                    h6 {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                    i {
+                        padding: 0 3px 0 5px;
+                    }
+
+                    span {
+                        color: brown;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .account-details-user-delete {
+
+                .btn-user-delete {
+                    padding: 10px 10px;
+                    margin-top: 25px;
+                    border: 1px solid #333;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .account-details-btn-notepad {
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        .account-details-user-logout {
+            margin-top: 15px;
+        }
+}
